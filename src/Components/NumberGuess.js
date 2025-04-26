@@ -3,7 +3,6 @@ import { useState } from "react";
 const NumberGuess = () => {
   const randomNumber = () => Math.floor(Math.random() * 100);
   const [numToGuess, setNumToGuess] = useState(randomNumber);
-  console.log(numToGuess);
   const [guess, setGuess] = useState("");
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState("");
